@@ -1,0 +1,26 @@
+border-none()
+    &:after
+        display none
+
+bg-image($url)
+    background-image url($url)
+    background-repeat no-repeat
+
+opacity-ie($opacity)
+    opacity $opacity
+    // IE8 filter
+    $opacity-ie = ($opacity * 100)
+    filter s('alpha(opacity=%s)', $opacity-ie)
+  
+.clearfix
+    display: inline-block
+    &:after
+        display block
+        content "."
+        height 0
+        line-height 0
+        clear both
+        visibility hidden
+.wrapper
+    width 1200px
+    margin 0 auto

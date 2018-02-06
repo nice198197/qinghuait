@@ -1,0 +1,61 @@
+@import "./mixin"
+.nav
+    height 70px
+    text-align center
+    background #009688
+    .logo
+        float left
+        width 142px
+        height 44px
+        margin-top 13px
+    .navbar
+        float left
+        width 500px
+        height 70px
+        >li
+            float left
+            position relative
+            height 100%
+            &.active
+                a
+                    color #fff   
+            >a
+                position relative
+                display block
+                float left
+                height 70px
+                padding 20px
+                line-height 18px
+                font-size 15px
+                color #e2e2e2
+                &:hover
+                    color #fff
+                span
+                    position relative
+                    font-size 12px
+                    line-height 14px
+                    display block                
+                    cursor pointer 
+            >ul
+                display none
+                position absolute
+                z-index 999
+                top 70px
+                left 30%
+                width 130px
+                padding 15px 0
+                background #ccc
+                border-radius 5px
+                box-shadow 10px 10px 10px #f2f2f2
+                >li
+                    position relative
+                    line-height 35px
+                    height 35px
+                    margin 0 
+                    &:hover
+                        background #5FB878    
+                        a
+                            color #fff
+    .regis-login
+        float right
+        padding-top 16px 
